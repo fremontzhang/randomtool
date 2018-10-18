@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称          </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover">
+      </image>
+      <text class="userinfo-nickname">{{userInfo.nickName}},欢迎使用云随机    </text>
+    </block>
+  </view>
+  
+  <view class="minimotto">
+  </view>
+  
+  <view class='text-wrp'>
+    <rich-text size='2' nodes="{{html}}">
+    </rich-text>
+  </view>
+  
+  <view class="minimotto">
+  </view>
+
+  <view>
+    <button type='primary' bindtap='doRandom' plain='true' size='mini'>开始点菜
+    </button>
+  </view>
+  
+  <view class="minimotto">
+  </view>
+  
+  <view>
+    <button type='default' bindtap='setConfig' size='mini'>初始化菜本</button>
+  </view>
+  <!-- <view>
+    <button type='default' bindtap='getMenuInfo'>获取菜单</button>
+  </view> -->
+</view>

@@ -1,0 +1,8 @@
+/* pages/random/randomresult.wxss */
+.random-text {
+  color: #aaa;
+}
+
+.randommotto {
+  margin-top: 50px;
+}

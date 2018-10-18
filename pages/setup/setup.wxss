@@ -1,0 +1,19 @@
+/* pages/setup/setup.wxss */
+
+
+
+.opt-button-right-bottom {
+  margin-top: 50px;
+  margin-right: 50px;
+  position:absolute; 
+  right:0px; 
+  bottom:20px;
+}
+
+.opt-button-left-bottom {
+  margin-top: 50px;
+  margin-left: 50px;
+  position:absolute; 
+  left:0px; 
+  bottom:20px;
+}

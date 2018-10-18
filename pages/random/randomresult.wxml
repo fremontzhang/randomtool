@@ -1,0 +1,15 @@
+<!--pages/random/randomresult.wxml-->
+
+
+<view class="btn-area">
+  <view class="body-view">
+  <text color="red">今天吃\n</text>
+  </view>
+</view>
+<view class="randommotto">
+    
+  </view>
+<!-- <view wx:for="{{randomArr}}">{{item.index}}</view> -->
+<view wx:for="{{randomArr}}">
+  <text class="random-text">{{item}}</text>
+</view>

@@ -1,0 +1,25 @@
+<!--setup.wxml-->
+<view class="container">
+  <view class="userinfo">
+
+      <text class="inputMenu">选择菜单</text>
+
+  </view>
+  <view>
+  <checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" style="display:flex;" wx:for="{{items}}">
+    <checkbox value="{{item.value}}" checked="{{item.checked}}" id='{{item.name}}'/>{{item.value}}
+  </label>
+
+</checkbox-group>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+   
+    <button type='primary' open-type='contact' size='5' bindtap='storeMenu' >确定</button>
+    <button type='default' open-type='contact' size='mini' bindtap='clearMenu' class='opt-button-right-bottom'>清除菜单</button>
+    <button type='default' open-type='contact' size='mini' bindtap='initMenu' class='opt-button-left-bottom'>初始化菜本</button>
+  </view>
+</view>
