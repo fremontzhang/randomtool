@@ -29,7 +29,7 @@
   </view>
   
   <view>
-    <button type='default' bindtap='setConfig' size='mini'>初始化菜本</button>
+    <button type='default' bindtap='setConfig' plain='true' size='mini'>初始化菜本</button>
   </view>
   <!-- <view>
     <button type='default' bindtap='getMenuInfo'>获取菜单</button>
